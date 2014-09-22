@@ -1,5 +1,5 @@
 {
- TH1F* h = new TH1F ("h","",60,0,60);
+ TH1F* h = new TH1F ("h","",120,0,60);
  tree->Draw("pt1 >> h","","goff");
 
  double integral_scale = h->Integral();
