@@ -24,3 +24,9 @@ draw:
     r99t W13TeV_new.root drawEta.cxx
 
 
+where: 
+
+    /data2/amassiro/Generation/CMSSW_6_2_2/src/LHEanalysis
+
+
+
