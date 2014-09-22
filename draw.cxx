@@ -12,6 +12,7 @@
  TCanvas* c1 = new TCanvas ("c1","c1");
  h->Draw();
  c1->SetGrid();
+ c1->SaveAs("pt.png");
 
  Double_t *integral = h->GetIntegral();
  TH1* h_int = (TH1*) h->Clone();
@@ -37,5 +38,6 @@
  h_int_left->SetLineColor(kBlue);
  h_int_left->Draw();
  c3->SetGrid();
+ c3->SaveAs("ptInt.png");
 
 }

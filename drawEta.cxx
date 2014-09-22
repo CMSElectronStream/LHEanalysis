@@ -1,5 +1,5 @@
 {
- TH1F* h = new TH1F ("h","",60,0,2.5);
+ TH1F* h = new TH1F ("h","",100,0,3.5);
  tree->Draw("abs(eta1) >> h","","goff");
 
  double integral_scale = h->Integral();
@@ -12,6 +12,7 @@
  TCanvas* c1 = new TCanvas ("c1","c1");
  h->Draw();
  c1->SetGrid();
+ c1->SaveAs("eta.png");
 
  Double_t *integral = h->GetIntegral();
  TH1* h_int = (TH1*) h->Clone();
@@ -32,6 +33,7 @@
  h_int->SetLineColor(kBlue);
  h_int->Draw();
  c2->SetGrid();
+ c2->SaveAs("etaInt.png");
 
 
 }
