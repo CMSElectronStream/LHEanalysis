@@ -25,8 +25,10 @@ draw:
     r99t W13TeV_new.root drawEta.cxx
 
     r99t W8TeV_new.root W13TeV_new.root drawComparison.cxx
+    r99t W8TeV_new.root W13TeV_new.root drawComparisonEta.cxx
 
-where: 
+
+where:
 
     /data2/amassiro/Generation/CMSSW_6_2_2/src/LHEanalysis
 
