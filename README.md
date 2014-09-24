@@ -15,6 +15,9 @@ to use:
     ./ntupleMaker.exe /data2/amassiro/Generation/MG5/MG5_aMC_v2_0_1/MY_W_LO_new/Events/run_01/unweighted_events.lhe   W13TeV_new.root
     ./ntupleMaker.exe /data2/amassiro/Generation/MG5/MG5_aMC_v2_0_1/MY_W_LO_8TeV/Events/run_01/unweighted_events.lhe   W8TeV_new.root
 
+    ./ntupleMaker.exe /data2/amassiro/Generation/MG5/MG5_aMC_v2_0_1/MY_W_jet_LO_13TeV/Events/run_01/unweighted_events.lhe   W13TeV_jet.root
+    ./ntupleMaker.exe /data2/amassiro/Generation/MG5/MG5_aMC_v2_0_1/MY_W_jet_LO_8TeV/Events/run_01/unweighted_events.lhe   W8TeV_jet.root
+
 draw:
 
     r99t W13TeV.root draw.cxx
@@ -27,6 +30,8 @@ draw:
     r99t W8TeV_new.root W13TeV_new.root drawComparison.cxx
     r99t W8TeV_new.root W13TeV_new.root drawComparisonEta.cxx
 
+    r99t W8TeV_jet.root W13TeV_jet.root drawComparison.cxx
+    r99t W8TeV_jet.root W13TeV_jet.root drawComparisonEta.cxx
 
 where:
 
